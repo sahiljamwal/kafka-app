@@ -1,0 +1,20 @@
+{
+  "name": "kafka-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index",
+    "build": "tsc --version && tsc",
+    "dev": "npm run build && node --watch --env-file=.env dist/index"
+  },
+  "keywords": [],
+  "author": "sahiljamwal",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
+  }
+}
